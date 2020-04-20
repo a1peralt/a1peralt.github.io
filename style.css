@@ -67,17 +67,12 @@ a:hover{
 
 #intro-paragraph{
 
-	/*Size*/
-	height:200px;
-	width:450px;
-
-	/*Positioning*/
-	margin-left: 5%;
-	margin-top: 5%;
-
-	/*Text*/
-	font-weight: 600;
-	font-size: 1.5em;
+    height: 200px;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .content-container{
@@ -107,8 +102,24 @@ a:hover{
 	overflow: hidden;
 }
 
-.thumbnail{
-	height:200px;
-	width: 300px;
-	margin-top: -1px;
+
+.soda{
+	height:102%;
+	width: 100%;
+}
+.soda:hover{
+	filter: opacity(0.75);
+	box-shadow: 1px 1px 1px white;
+	cursor: pointer;
+}
+
+
+.nurture{
+	height:100%;
+	width: 101%;
+}
+.nurture:hover{
+	filter: opacity(0.75);
+	filter: brightness(1.15);
+	cursor: pointer;
 }
