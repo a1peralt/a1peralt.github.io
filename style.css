@@ -3,6 +3,7 @@ html{
 	background: linear-gradient(0deg, rgba(23,29,36,1) 0%, rgba(0,18,32,1) 100%);
 	font-family: 'DM Sans', sans-serif;
 	color:white;
+
 }
 
 ::selection {
@@ -20,6 +21,10 @@ nav{
 	/*Text*/
 	font-weight: normal;
 	letter-spacing: 2px;
+}
+
+body{
+	position: relative;
 }
 
 .nav-button{
@@ -78,10 +83,13 @@ a:hover{
 .content-container{
 	/*Size & Positioning*/
 	width: 90%;
+	max-height: 100%;
 	margin-left: 5%;
 	margin-top: 1%;
 
 	display: inline-flex;
+
+	overflow: hidden;
 }
 
 .section-title{
@@ -124,3 +132,32 @@ a:hover{
 	cursor: pointer;
 }
 
+
+/* WORK PAGES */
+
+.progress-tracker{
+	border: 1px solid red;
+	height: 90%;
+	width: 20% ;
+	margin-left: 0;
+}
+
+.content-container-work{
+	width: 90%;
+	max-height: 100%;
+
+	display: block;
+	overflow-x: hidden;
+
+	text-align: justify;
+}
+
+.noted{
+	font-weight: lighter;
+	font-style: italic;
+}
+
+p{
+	margin-top: -16px;
+	margin-bottom: 50px;
+}
