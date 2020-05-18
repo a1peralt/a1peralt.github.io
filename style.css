@@ -162,6 +162,12 @@ p{
 	margin-bottom: 50px;
 }
 
+p.caption{
+	font-style: italic;
+	font-size: 0.9em;
+	text-align: center;
+}
+
 .personas{
 	width:60%;
 
@@ -170,4 +176,20 @@ p{
 	margin-right: auto;
 	display: block;
 	margin-bottom: 20px;
+}
+
+.low-prototypes{
+    width: 30%;
+    margin-left: 32px;
+    margin-right: auto;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.mid-prototypes{
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 22px;
 }
