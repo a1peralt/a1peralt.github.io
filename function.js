@@ -19,13 +19,13 @@ $(document).ready(function() {
 	$('.chapter').click( function(){
 		let id = $(this).attr('id');
 		id = '#'+id+'-text';
-		$("#scroll").animate({ scrollTop: locations[id] + 'px'}, 'swing');
+		$("#scroll").animate({ scrollTop: locationsSoda[id] + 'px'}, 'swing');
 	});
 
 });
 
 
-var locations = {
+var locationsSoda = {
 	'#OV-text': 570,
 	'#PS-text': 823,
 	'#NF-text': 951,
