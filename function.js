@@ -15,13 +15,19 @@ $(document).ready(function() {
 	});
 
 
-	/*Dynamic ScrollTo*/
+	/*Dynamic ScrollTo for Soda*/
 	$('.chapter').click( function(){
 		let id = $(this).attr('id');
 		id = '#'+id+'-text';
 		$("#scroll").animate({ scrollTop: locationsSoda[id] + 'px'}, 'swing');
 	});
 
+	/*ScrollTo for Nurture*/
+	$('.chapter2').click( function(){
+		let id = $(this).attr('id');
+		id = '#'+id+'-text';
+		$("#scroll").animate({ scrollTop: locationsNurture[id] + 'px'}, 'swing');
+	});
 });
 
 
@@ -35,4 +41,16 @@ var locationsSoda = {
 	'#MFP-text': 5737,
 	'#HFP-text': 9097,
 	'#FN-text': 10355
+};
+
+var locationsNurture = {
+	'#OV-text': 720,
+	'#PS-text': 940,
+	'#NF-text': 1067,
+	'#SK-text': 3298,
+	'#MFP-text': 4653,
+	'#UT-text': 6149,
+	'#AD-text': 6951,
+	'#HFP-text': 9166,
+	'#FN-text': 9325
 };
