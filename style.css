@@ -4,6 +4,8 @@ html{
 	font-family: 'DM Sans', sans-serif;
 	color:white;
 
+	overflow-y: hidden;
+
 }
 
 ::selection {
@@ -83,7 +85,7 @@ a:hover{
 .content-container{
 	/*Size & Positioning*/
 	width: 90%;
-	max-height: 100%;
+	max-height: 93vh;
 	margin-left: 5%;
 	margin-top: 1%;
 
@@ -135,20 +137,77 @@ a:hover{
 
 /* WORK PAGES */
 
+.chapter:hover{
+	color:gray;
+	cursor: pointer;
+}
+
 .progress-tracker{
-	height: 90%;
+
+	/*Size and Positioning*/
+	height: 90vh;
 	width: 20% ;
 	margin-left: 0;
+
+	display: flex;
+
+	border-right: 1px solid white;
+}
+
+.progress-tracker li{
+
+	/* List Settings */
+	padding-bottom: 40px;
+	font-size: 1.3em;
+	font-weight: bolder;
+	list-style: none;
+
+}
+
+#tracker-container{
+	border: 1px solid white;
+
+	/* Size & Positioning */
+	width: 25px;
+	margin-right: 5px;
+	border-radius: 20px;
+
+	overflow: hidden;
+}
+
+#progress{
+
+	/* Size & Positioning */
+	width: 25px;
+
+	background-color: white;
 }
 
 .content-container-work{
+
 	width: 90%;
-	max-height: 100%;
+	max-height: 90vh;
 
 	display: block;
 	overflow-x: hidden;
+	overflow-y: scroll;
 
 	text-align: justify;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* CUSTOM SCROLLBAR ONLY AVAILABLE ON CHROME */
+.content-container-work::-webkit-scrollbar{
+	width: 15px;
+}
+.content-container-work::-webkit-scrollbar-track {
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.content-container-work::-webkit-scrollbar-thumb {
+  background-color: #333745; 
+  border-radius: 10px;
 }
 
 .noted{

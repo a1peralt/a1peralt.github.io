@@ -11,6 +11,12 @@
 	<!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="function.js"></script>
+
 </head>
 
 
@@ -27,10 +33,25 @@
 	<div class="content-container">
 
 		<div class="progress-tracker">
+
+			<div id="tracker-container">
+				<div id="progress"></div>
+			</div>
+			<ul>
+				<li class="chapter" id="OV">Overview</li>
+				<li class="chapter" id="PS">Problem Statement</li>
+				<li class="chapter" id="NF">Needfinding</li>
+				<li class="chapter" id="UP">User Personas</li>
+				<li class="chapter" id="CA">Competitive Analysis</li>
+				<li class="chapter" id="LFP">Low-Fidelity Prototypes</li>
+				<li class="chapter" id="MFP">Mid-Fidelity Prototypes</li>
+				<li class="chapter" id="HFP">High-Fidelity Prototypes</li>
+				<li class="chapter" id="FN">Final Note</li>
+			</ul>
 			
 		</div>
 
-		<div class="content-container-work">
+		<div class="content-container-work" id="scroll">
 			
 			<h1> Soda & Swine UCSD Case Study </h1>
 
@@ -41,7 +62,7 @@
 
 			<br>
 
-			<h2> Overview </h2>
+			<h2 id="OV-text"> Overview </h2>
 			<p>
 				The UC San Diego campus hosts a fast-casual dining experience exclusive to San Diego: Soda and Swine.
 
@@ -50,19 +71,19 @@
 				But with all the neat specialties up its sleeve, the restaurant falls behind on one feature that many other restaurants have already mastered: a website. Soda and Swine UCSD has a very minimal website that leaves potential patrons wondering about the types of selection and services offered by the restaurant. This lack of presentation can be the crucial turning point for a potential customer picking between Soda and Swine UCSD and competing restaurants.
 			</p>
 
-			<h2> Problem Statement</h2>
+			<h2 id="PS-text"> Problem Statement</h2>
 			<p>
 				Soda and Swine UCSD needs a way to give potential patrons a complete view into the food selection and restaurant information to facilitate their decision in picking a restaurant.
 			</p>
 
-			<h2>Needfinding</h2>
+			<h2 id="NF-text">Needfinding</h2>
 			<p>
 				To gain a sense of what customers wanted from the new Soda and Swine UCSD website, my group and I set out to interview a pool of people whom we thought represented the average customer base. <span class="noted"> Note: Before this stage, my group and I had already sat down with the General Manager at Soda and Swine UCSD so we already had an idea of who to interview for a good representation of customers. </span> Our interviews would consist of persona questions (occupation, age), website-usage questions, and questions regarding familiarity with Soda and Swine.
 
 				We selected people who fit the following categories: students, staff & faculty, and non-affiliates. The students, both undergraduates and graduates, represent the largest group of the customer base. Staff & faculty represent that second largest with the manager telling us of regulars that would go the restaurant after work or during lunchtime for their usual meal. The non-affiliates category contains customers who are neither students nor staff members but have taken a trip to the university campus to dine at the restaurant.
 			</p>
 
-			<h2>User Personas</h2>
+			<h2 id="UP-text">User Personas</h2>
 
 			<p>
 				Using the three categories and the responses we received from our interviews, we created three user personas that we believed to encapsulate the general needs and goals for these types of people. These personas would help us justify the design and functionality choices when presenting to clients and stakeholders.
@@ -74,7 +95,7 @@
 
 			<br>
 
-			<h2>Competitive Analysis</h2>
+			<h2 id="CA-text">Competitive Analysis</h2>
 			<p>
 				No tenacious application development would be complete without a thorough look at the current market trends. My team had several discussions to select the most relevant competitors whose websites to audit. We believed these competitors shared the same types of users so it was easy to audit where the competing websites fell short of meeting user needs.
 
@@ -107,7 +128,7 @@
 
 			-->
 
-			<h2>Low-Fidelity Prototypes</h2>
+			<h2 id="LFP-text">Low-Fidelity Prototypes</h2>
 
 			<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/image4.png" class="low-prototypes">
 			<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/image21.png" class="low-prototypes">
@@ -118,7 +139,7 @@
 
 			<p class="caption"> This project was meant to grow/change an existing product so there was no need for hand-drawn sketches of novel layouts. Instead, these well-done and hand-drawn sketches also acted as our first prototype that we would use as a guide and as a first impression of our suggestions onto an existing UI. </p>
 
-			<h2>Mid-Fidelity Prototypes</h2>
+			<h2 id="MFP-text">Mid-Fidelity Prototypes</h2>
 			<div style="text-align: center;">
 				<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/image25.jpg" class="mid-prototypes">
 				<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/image26.jpg" class="mid-prototypes">
@@ -148,7 +169,7 @@
 			</div>
 			<p class="caption">The contact page holds all the location info and, ideally, an interactive Google Map. </p>
 
-			<h2>High-Fidelity Prototypes</h2>
+			<h2 id="HFP-text">High-Fidelity Prototypes</h2>
 			<div style="text-align: center;">
 				<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/Mobile%20Home.PNG" class="mid-prototypes">
 				<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/Mobile%20Home%202.PNG" class="mid-prototypes">
@@ -161,7 +182,7 @@
 				<img src="https://raw.githubusercontent.com/a1peralt/a1peralt.github.io/master/images/Mobile%20Catering.PNG" class="mid-prototypes">
 			</div>
 
-			<h2>Final Note</h2>
+			<h2 id="FN-text">Final Note</h2>
 			<p>
 				In the end, my group had created a fully interactive Figma prototype of the website we set out to design for a real client - Soda & Swine UCSD.
 
